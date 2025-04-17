@@ -1,6 +1,8 @@
 # Trellis Backend
 
-A Fastify-based backend API with JWT authentication and modular architecture.
+
+Trellis is a Fastify-based backend API designed for high performance, scalability, and modularity. The API is built using a modular architecture that separates concerns into distinct layers (controllers, services, repositories, and validators), enabling easier management and maintenance. It also incorporates JWT (JSON Web Token) authentication for secure access control, ensuring that only authorized users can interact with certain parts of the API.
+
 
 ## Features
 
@@ -108,7 +110,7 @@ Modules can be enabled/disabled in `src/modules/index.js` and each has its own d
 
 ## API Endpoints
 
-Refer to `postman_collection.json" for more details. Feel free to import it to your Postman instance.
+Refer to `postman_collection.json` for more details. Feel free to import it to your Postman instance.
 
 ## Authentication
 
@@ -132,6 +134,17 @@ On initial setup, the system creates a default admin user with these credentials
 - **Username**: admin (can be changed via ADMIN_USERNAME env var)
 - **Password**: Admin123456 (can be changed via ADMIN_PASSWORD env var)
 
+
+## Future Plans
+
+   - Implement module installation and activation mechanisms
+   - Create a module packaging format for distribution
+   - Develop the control panel module management interface
+   - Add system monitoring capabilities
+   - Build a module marketplace for discovering and sharing modules
+   - Implement a developer toolkit for module creation
+   - Enhance system with analytics and dashboard capabilities
+   - Develop advanced module dependency management
 
 ## License
 
