@@ -1,0 +1,28 @@
+{
+  "name": "trellis",
+  "version": "1.0.0",
+  "description": "Starter Fastify backend with modular architecture and built-in JWT authentication.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "setup": "node src/db/setup.js",
+    "create-admin": "node src/scripts/create-admin.js",
+    "init": "npm run setup && npm run create-admin",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:api": "node run-api-tests.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@fastify/jwt": "^7.2.2",
+    "@fastify/rate-limit": "^8.0.3",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.0",
+    "pg": "^8.11.3",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
