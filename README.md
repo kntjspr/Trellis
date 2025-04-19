@@ -15,8 +15,8 @@ Trellis is a Fastify-based backend API designed for high performance, scalabilit
 - Rate limiting
 - CORS support
 - Modular architecture
-- Product management system
-- Digital product serial number tracking
+- Product management system (Feature module and removable)
+- Digital product serial number tracking (Feature module and removable)
 - Comprehensive API testing framework
 
 ## Prerequisites
